@@ -27,7 +27,7 @@ body{
     color: #1ebba3;
 }
 .background{
-    position: absolute;
+    position: relative;
 }
 .heading-content{
     position: absolute;
