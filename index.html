@@ -5,30 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel= "stylesheet" type="text/css" href="bootstrap.min.css">
-  <link rel= "stylesheet" type="text/css" href="style.css"
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel= "stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body data-spy ="scroll" data-target="#navbarResponsive">
     <div id="Home" >
         <!-----navigation start-->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">  
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home </a>
+                  <a class="nav-link" href="#Home">Home </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#About">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#Projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#Contact">Contact</a>
                 </li>
               </ul>
               
@@ -36,15 +37,16 @@
           </nav>
         <!-----Navigation end-->
         <!-----Background start-->
-        <div class="Background">
+        <div class="background ">
           <img src= "atlanta2.jpg" class= "img-fluid">
+          <div class= "heading-content text-center"> 
+            <h5>Hello, I'm</h5>
+            <h1>Martin Hartsfield</h1>
+            <p>AND THIS IS MY WORLD</p>
+          </div>
+      
         </div>
-        <div class= "heading-content text-center"> 
-          <h5>Hello, I'm</h5>
-          <h1>Martin Hartsfield</h1>
-          <p>AND THIS IS MY WORLD</p>
-        </div>
-    
+        
 
         <!-----Background end-->
     </div>
@@ -150,11 +152,11 @@
     </div>
     <!-----Project end-->
     <!-----Contact start-->
-    <div id="Contact" class="w-50 mx-auto mt-3 pb-5" >
+    <div id="Contact" class=" w-50 mx-auto mt-3 pb-5" >
       <div class="post-heading text-center">
         <h3 class="display-4 font-weight-bold">Contact Me</h3>
         <hr class="w-50 mx-auto pb-1">
-      </div><form action="/action_page.php">
+      </div><form action="mailto:martin_harts@yahoo.com">
         <div class="form-group">
           <label for="email">Full Name:</label>
           <input type="text" class="form-control" id="email">
@@ -172,8 +174,63 @@
 
     
     <!-----Contact end-->
-    <!-----footer start-->
 
+
+    <!-----footer start-->
+    <!-- Footer -->
+ <footer class="text-center text-lg-start bg-light text-muted">
+   <!-- Section: Social media -->
+   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with me on linkedin and github:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.linkedin.com/in/martinharts/" class="me-4 text-reset">
+        <i class="fas fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/martinharts" class="me-4 text-reset">
+        <i class="fas fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Walbridge, Ohio 43465, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            Martin_harts@yahoo.com
+          </p>
+            <p><i class="fas fa-phone me-3"></i> (678)262-8423</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+      <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+   <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://www.linkedin.com/in/martinharts/">Martin Hartsfield</a>
+    </div>
+    <!-- Copyright -->
+   </footer>
+   <!-- Footer -->
 
 
 
@@ -181,7 +238,8 @@
     <!-----footer end-->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
